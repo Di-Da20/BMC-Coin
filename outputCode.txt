@@ -1,0 +1,62 @@
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { RocketIcon, TwitterIcon, GlobeIcon } from "lucide-react";
+
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-gradient-to-b from-yellow-100 to-green-200 p-4">
+      <div className="max-w-4xl mx-auto text-center">
+        <h1 className="text-5xl font-extrabold mb-4">🐊 Bombardino Crocodilo (BMC)</h1>
+        <p className="text-lg mb-6">
+          Der dezentralste Meme-Coin auf der Binance Smart Chain. Kein Owner. Kein Admin. Nur Crocodilo.
+        </p>
+        <img
+          src="/bombardino-logo.png"
+          alt="Bombardino Crocodilo Logo"
+          className="mx-auto mb-6 w-40 h-40 rounded-full shadow-lg"
+        />
+
+        <Card className="mb-6">
+          <CardContent className="p-4">
+            <h2 className="text-2xl font-bold mb-2">Token Infos</h2>
+            <ul className="text-left list-disc list-inside">
+              <li><strong>Name:</strong> Bombardino Crocodilo</li>
+              <li><strong>Symbol:</strong> BMC</li>
+              <li><strong>Supply:</strong> 1.000.000.000</li>
+              <li><strong>Chain:</strong> Binance Smart Chain (BSC)</li>
+              <li><strong>Contract:</strong> <em>wird bald veröffentlicht</em></li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="mb-6">
+          <CardContent className="p-4">
+            <h2 className="text-2xl font-bold mb-2">Roadmap (Q2–Q4 2025)</h2>
+            <ul className="text-left list-disc list-inside">
+              <li>✅ Deployment auf BSC</li>
+              <li>✅ Website & Logo</li>
+              <li>🚀 Airdrop & Meme-Contests</li>
+              <li>📈 Listing auf PancakeSwap</li>
+              <li>🔒 Liquidity Lock & Sicherheit</li>
+              <li>🌐 CoinMarketCap-Antrag</li>
+              <li>🎮 NFT-Kollektion & Minigames</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <div className="flex justify-center gap-4">
+          <Button variant="outline" className="flex items-center gap-2">
+            <RocketIcon className="w-4 h-4" /> Whitepaper
+          </Button>
+          <Button variant="outline" className="flex items-center gap-2">
+            <GlobeIcon className="w-4 h-4" /> PancakeSwap
+          </Button>
+          <Button variant="outline" className="flex items-center gap-2">
+            <TwitterIcon className="w-4 h-4" /> Twitter
+          </Button>
+        </div>
+      </div>
+    </main>
+  );
+}
